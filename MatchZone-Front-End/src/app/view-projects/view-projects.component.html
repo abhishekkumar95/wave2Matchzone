@@ -1,0 +1,142 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<!-- Header -->
+<nav class="navbar navbar-expand-lg ">
+
+  <mat-toolbar class="head">
+    <img src="/src/logo9.png" alt="Nature" class="responsive">
+
+    <span class="spacer"></span>
+
+  </mat-toolbar>
+</nav>
+
+<form class="form" #ProjectsForm="ngForm" action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h3>Project Details</h3>
+    <hr>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Project Title</label>
+      <div class="col-sm-10">{{projects.projectTitle}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Client Name</label>
+      <div class="col-sm-10">{{projects.client}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Project Status</label>
+      <div class="col-sm-10">{{projects.projectStatus}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="password">Duration</label>
+      <div class="col-sm-10">{{projects.duration}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Project Details</label>
+      <div class="col-sm-10">{{projetcs.projectDetails}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Project Members</label>
+      <div class="col-sm-10">{{projetcs.projectMembers}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Role</label>
+      <div class="col-sm-10">{{projects.role}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Project Location</label>
+      <div class="col-sm-10">{{projetcs.projectLocation}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Project At</label>
+      <div class="col-sm-10">{{projects.projectAt}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Team Size</label>
+      <div class="col-sm-10">{{projects.teamSize}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Skills</label>
+      <div class="col-sm-10">{{projects.skills}}
+
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Project URL</label>
+      <div class="col-sm-10">{{projects.projectURL}}
+
+      </div>
+    </div>
+
+    <div class="text-center">
+
+      <a routerLink="/cards"> <input class="btn btn-form" type="submit" value="Back"></a>
+    </div>
+    <hr>
+
+  </div>
+</form>
+
+<!-- Footer -->
+<section id="lab_social_icon_footer">
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+
+        <h6><b>MatchZone Thinks</b> </h6>
+      </div>
+
+
+      <div class="column">
+
+        <h6>Copyright © 2018 Stackroute </h6>
+      </div>
+      <div class="column">
+        <div class="text-center center-block">
+          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

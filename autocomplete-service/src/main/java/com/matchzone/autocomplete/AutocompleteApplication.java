@@ -1,0 +1,14 @@
+package com.matchzone.autocomplete;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+@SpringBootApplication
+@EnableEurekaClient
+public class AutocompleteApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AutocompleteApplication.class, args);
+	}
+}

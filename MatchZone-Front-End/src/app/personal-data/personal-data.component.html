@@ -1,0 +1,167 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg ">
+  <mat-toolbar class="head">
+    <img src="/src/logo9.png" alt="Nature" class="responsive">
+    <span class="spacer"></span>
+  </mat-toolbar>
+</nav>
+
+<!-- Form -->
+<form #PersonalForm="ngForm" class="form" action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h3>Personal Data</h3>
+    <hr>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Date of Birth</label>
+      <div class="col-sm-10">
+        <input matInput [matDatepicker]="picker1" name="dateOfBirth" placeholder="Enter your DOB" type="text" id="dateOfBirth" [(ngModel)]="personal.dateOfBirth">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1 startView="year" [startAt]="startDate"></mat-datepicker>
+      </div>
+    </div>
+
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" >Gender</label>
+      <div class="col-sm-10">
+        <mat-radio-group formControlName="floatLabel">
+          <mat-radio-button value="male" [(ngModel)]="personal.gender">Male &nbsp;&nbsp;&nbsp;</mat-radio-button>
+          <mat-radio-button value="female" [(ngModel)]="personal.gender">Female &nbsp;&nbsp;&nbsp;</mat-radio-button>
+          <mat-radio-button value="other" [(ngModel)]="personal.gender">Other &nbsp;&nbsp;&nbsp;</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" >Marital Status</label>
+      <div class="col-sm-10">
+        <mat-select placeholder="Marital status" class="form-control ng-untouched ng-pristine ng-invalid" name="maritalStatus" id="maritalStatus"
+          type="option" [(ngModel)]="personal.maritalStatus">
+          <mat-option value="Single">Single</mat-option>
+          <mat-option value="Married">Married</mat-option>
+        </mat-select>
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" >Permanent Address</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="permanentAddress" placeholder="Enter your permanent Address"
+          type="text" id="permanentAddress" [(ngModel)]="personal.permanentAddress">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Home Town</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="homeTown" placeholder="Enter your hometown" type="text"
+          id="homeTown" [(ngModel)]="personal.homeTown">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2">Pin Code<em>*</em></label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="pinCode" placeholder="Enter your Pin Code" type="text"
+          id="pinCode" [(ngModel)]="personal.pinCode">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2">Languages</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="languages" placeholder="Enter known Languages" type="text"
+          id="languages" [(ngModel)]="personal.languages">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" >Age</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="age" placeholder="Enter your Age" type="number" id="age"
+          [(ngModel)]="personal.age">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" >Blood Group</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="bloodGroup" placeholder="Enter blood Group" type="text"
+          id="bloodGroup" [(ngModel)]="personal.bloodGroup">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Linkedin URL</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="linkedinUrl" placeholder="Enter your linkedin Profile Url"
+          type="text" id="linkedinUrl" [(ngModel)]="personal.linkedinUrl">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Email-Id</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="emailId" placeholder="Enter your Email Id" type="text"
+          id="emailId" [(ngModel)]="personal.emailId">
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">GitHub URL</label>
+      <div class="col-sm-10">
+        <input class="form-control ng-untouched ng-pristine ng-invalid" name="gitHubUrl" placeholder="Enter your Github Profile URL"
+          type="text" id="gitHubUrl" [(ngModel)]="personal.gitHubUrl">
+      </div>
+    </div>
+
+    <div class="text-center">
+
+      <input class="btn btn-form" id="myBtn" data-toggle="modal" data-target="#myModal" type="submit" value="Save" (click)="onSubmit(personal)">
+      <h6 style="color:blue;">{{error}}</h6>
+
+    </div>
+
+
+    <hr>
+
+
+  </div>
+</form>
+
+<!-- Footer -->
+<section id="lab_social_icon_footer">
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+
+        <h6><b>MatchZone Thinks</b> </h6>
+      </div>
+
+
+
+      <div class="column">
+
+        <h6>Copyright © 2018 Stackroute </h6>
+      </div>
+      <div class="column">
+        <div class="text-center center-block">
+          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

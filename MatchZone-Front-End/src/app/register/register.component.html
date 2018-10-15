@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg ">
+
+    <mat-toolbar class="head">
+        <img src="/src/logo9.png" alt="Nature" class="responsive">
+
+        <span class="spacer"></span>
+
+    </mat-toolbar>
+
+</nav>
+<mat-card class="card blue-grey darken-1"><strong>
+        <h3 class="heading">Sign Up</h3>
+    </strong>
+    <form #UserRegistrationForm="ngForm" class="container">
+        <mat-form-field class="expand">
+            <input [(ngModel)]="userEmail" required matInput placeholder="Enter your email" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+       
+
+        <mat-form-field>
+            <input type="password" name="userPassword" #UserPassword="ngModel" [(ngModel)]="userPassword" required matInput placeholder="Password">
+        </mat-form-field><br>
+
+        <mat-form-field>
+                <input type="text" name="userName" #UserName="ngModel" [(ngModel)]="userName" matInput placeholder="Profile Name">
+            </mat-form-field><br>
+       
+
+    </form>
+    <div class="submit">
+
+        <button type="submit" [disabled]="!UserRegistrationForm.valid" class="btn btn-info" (click)="onSubmit()"><a href="login"><h6
+                    class="text">Submit</h6></a></button>
+
+    </div>
+</mat-card>
+
+<!-- Footer -->
+
+<section id="lab_social_icon_footer">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+
+                <h6><b>MatchZone Thinks</b> </h6>
+            </div>
+            <div class="column">
+                
+                <h6>Copyright © 2018 Stackroute </h6>
+            </div>
+            <div class="column">
+                <div class="text-center center-block">
+                    <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

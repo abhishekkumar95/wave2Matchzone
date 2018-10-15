@@ -1,0 +1,16 @@
+Standalone-Application
+Client-Server-Application
+Web-Application
+Distributed Application
+Standalone-Application
+Java-Project
+Z/os-installation
+Z/OS-virtualization
+Image-Processing
+Robotics
+WaterMarking-Algorithm
+Video_calling-app
+Web-Socket
+Mainframe-Scheduler
+Library-management
+Real-Time-management-system

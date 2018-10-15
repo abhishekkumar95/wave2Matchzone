@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg ">
+  <mat-toolbar class="head">
+    <img src="/src/logo9.png" alt="Nature" class="responsive">
+    <span class="spacer"></span>
+  </mat-toolbar>
+</nav>
+
+<body>
+  <div class="matchzone">
+    <h5><strong>Welcome {{userName}}</strong></h5>
+  </div>
+  <mat-card class="mat-card">
+
+    <input class="input" class="abc" type="text" name="query" id="query" [(ngModel)]="query" placeholder="Search for candidates">    <div
+      class="search">
+      <button type="submit" (click)="onSearch(query)"><i class="fa fa-search"></i></button>
+    </div>
+    
+  </mat-card>
+  <div *ngIf="result">
+    <mat-card>
+        <ul>
+
+           <span class="mat-card-title" style="text-align:center">
+              <li *ngFor="let result of result">
+                <a href="cards">{{result.userName}}</a>
+                
+                </li></span>
+
+     
+       
+       
+      </ul>
+    </mat-card>
+  </div>
+</body>
+
+<!-- Footer -->
+<section id="lab_social_icon_footer">
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+
+        <h6><b>MatchZone Thinks</b> </h6>
+      </div>
+
+
+      <div class="column">
+
+        <h6>Copyright © 2018 Stackroute </h6>
+      </div>
+      <div class="column">
+        <div class="text-center center-block">
+          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

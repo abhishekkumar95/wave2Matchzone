@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="noindex, nofollow" name="robots">
+<!-- Header -->
+<nav class="navbar navbar-expand-lg ">
+  <mat-toolbar class="head">
+    <img src="/src/logo9.png" alt="Nature" class="responsive">
+    <span class="spacer"></span>
+  </mat-toolbar>
+</nav>
+<!-- Form -->
+<form class="form" #AcademicForm="ngForm" action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h3>Academic Details</h3>
+    <hr>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Education<em>*</em></label>
+      <div class="col-sm-10">{{academic.education}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Specialisation<em>*</em></label>
+      <div class="col-sm-10">{{academic.specialisation}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">University/Institute<em>*</em></label>
+      <div class="col-sm-10">{{academic.universityInstitute}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="password">Course</label>
+      <div class="col-sm-10">{{academic.course}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Passing Year<em>*</em></label>
+      <div class="col-sm-10">{{academic.passingYear}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="requiredText">Grading System<em>*</em></label>
+      <div class="col-sm-10">{{academic.gradingSystem}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Higher Secondary</label>
+      <div class="col-sm-10">{{academic.higherSecondary}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Year of Passing</label>
+      <div class="col-sm-10">{{academic.passingYear}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Location</label>
+      <div class="col-sm-10">{{academic.location}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Senior Secondary</label>
+      <div class="col-sm-10">{{academic.seniorSecondary}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Year of Passing</label>
+      <div class="col-sm-10">{{academic.senDuration}}
+      </div>
+    </div>
+
+    <div class="form-group" class="expand">
+      <label class="form-label form-label-big col-sm-2" for="optionalText">Location</label>
+      <div class="col-sm-10">{{academic.senLocation}}
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a routerLink="/cards"> <input class="btn btn-form" type="submit" value="Back"></a>
+    </div>
+    <hr>
+
+  </div>
+</form>
+
+<!-- Footer -->
+<section id="lab_social_icon_footer">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+
+        <h6><b>MatchZone Thinks</b> </h6>
+      </div>
+
+      <div class="column">
+
+        <h6>Copyright © 2018 Stackroute </h6>
+      </div>
+      <div class="column">
+        <div class="text-center center-block">
+          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
