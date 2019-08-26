@@ -46,7 +46,7 @@ services:
    image: downstream-service
    hostname: localhost
    ports:
-     - 8085:8085
+     - 8085:8085 
    healthcheck:
      test: "exit 0"
 
